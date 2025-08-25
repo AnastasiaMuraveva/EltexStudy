@@ -19,15 +19,15 @@ struct udpframe{
 
 struct ipframe{
     uint8_t ver_head_len;
-    u_int8_t d_serv;
+    uint8_t d_serv;
     uint16_t total_len;
     uint16_t id;
     uint16_t flags_offset;
     uint8_t ttl;
     uint8_t protocol;
-    u_int16_t checksum;
+    uint16_t checksum;
     uint32_t ip_source;
-    u_int32_t ip_dest;
+    uint32_t ip_dest;
     struct udpframe udp_frame;
 };
 
